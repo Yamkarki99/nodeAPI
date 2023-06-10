@@ -1,0 +1,41 @@
+###test call
+GET http://localhost:8000
+
+###Send request
+SEND http://localhost:8000
+
+###delete request 
+DELETE  http://localhost:8000
+
+
+###Task routers below
+GET http://localhost:8000/localhost:8000/api/v1/task
+
+
+### read task api
+POST http://localhost:8000/api/v1/task
+Content-Type:application/json
+
+{
+    "task":"coding",
+    "hr":33,
+    "id":1234,
+    "type":"entry"
+}
+
+
+### read task api
+PATCH http://localhost:8000/api/v1/task
+Content-Type:application/json
+
+{
+     "task":"coding",
+    "hr":33,
+    "id":1234,
+    "type":"entry"
+}
+
+
+### read task api
+DELETE http://localhost:8000/api/v1/task
+
